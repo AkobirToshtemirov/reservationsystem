@@ -9,12 +9,14 @@ import com.pdp.reservationsystem.mapper.CityMapper;
 import com.pdp.reservationsystem.repository.AirportRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
+@Transactional
 public class AirportService {
 
     private final AirportRepository airportRepository;

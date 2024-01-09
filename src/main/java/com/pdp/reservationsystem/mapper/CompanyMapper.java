@@ -5,7 +5,7 @@ import com.pdp.reservationsystem.entity.Company;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface CompanyMapper {
 
     CompanyMapper INSTANCE = Mappers.getMapper(CompanyMapper.class);
